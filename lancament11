@@ -1,0 +1,24 @@
+classe ponto
+   variáveis x, y
+   função __init__ (x, y)
+    
+classe linha
+    variáveis pnt1, pnt2
+    função __init__(pnt1, pnt2)
+    função  comprimento()
+
+classe polígono
+    variável pontos
+    função __init__(pontos)
+    função perímetro()
+
+Pseudocódigo (exemplo)
+1 Declare as variáveis "número1", "número2" e "resultado"
+2 Pergunte ao usuário qual o valor do primeiro número e guarde na
+variável "número1"
+3 Pergunte ao usuário qual o valor do segundo número e guarde na
+variável "número2"
+4 Some "número1" e "número2" e guarde o resultado na variável
+"resultado"
+5 Mostre ao usuário o resultado da soma
+6 Fim
