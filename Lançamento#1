@@ -1,79 +1,24 @@
-função principal():
-    // Crie uma lista vazia para armazenar formas geométricas
-    formas = []
+classe ponto
+   variáveis x, y
+   função __init__ (x, y):
+     Atribui x à variável self.x
+     Atribui y à variável self.y
 
-    enquanto verdadeiro:
-        // Exibir menu principal
-        exibir("1. Criar forma")
-        exibir("2. Listar formas")
-        exibir("3. Sair")
-        
-        opcao = input("Escolha uma opção: ")
+classe linha
+    variáveis pnt1, pnt2
+    função __init__(pnt1, pnt2):
+       Atribui pnt1 à variável self.pnt1
+       Atribui pnt2 à variável self.pnt2
+    função  comprimento():
+       Calcula o comprimento da linha utilizando as coordenadas de pnt1 e pnt2.
+       Retorna o valor do comprimento.
 
-        se opcao == "1":
-            criar_forma(formas)
-        senão, se opcao == "2":
-            listar_formas(formas)
-        senão, se opcao == "3":
-            sair()
-        senão:
-            exibir("Opção inválida. Tente novamente.")
+classe polígono
+    variável pontos
+    função __init__(pontos):
+       Atribui a lista de pontos à variável self.pontos
+    função perímetro():
+       Calcula o perímetro do polígono somando os comprimentos das linhas formadas pelos pontos consecutivos na lista de pontos.
+       Retorna o valor do perímetro.
 
-função criar_forma(formas):
-    // Exibir menu de criação de forma
-    exibir("Escolha o tipo de forma:")
-    exibir("1. Círculo")
-    exibir("2. Triângulo")
-    exibir("3. Quadrado")
-    
-    tipo = input("Digite o número da forma desejada: ")
 
-    se tipo == "1":
-        raio = input("Digite o raio do círculo: ")
-        adicionar_circulo(formas, raio)
-    senão, se tipo == "2":
-        lado1 = input("Digite o comprimento do lado 1: ")
-        lado2 = input("Digite o comprimento do lado 2: ")
-        lado3 = input("Digite o comprimento do lado 3: ")
-        adicionar_triangulo(formas, lado1, lado2, lado3)
-    senão, se tipo == "3":
-        lado = input("Digite o comprimento do lado do quadrado: ")
-        adicionar_quadrado(formas, lado)
-    senão:
-        exibir("Opção inválida. Tente novamente.")
-
-função adicionar_circulo(formas, raio):
-    // Criar um objeto de círculo com raio especificado
-    circulo = { "tipo": "círculo", "raio": raio }
-    adicionar_forma(formas, circulo)
-
-função adicionar_triangulo(formas, lado1, lado2, lado3):
-    // Criar um objeto de triângulo com lados especificados
-    triangulo = { "tipo": "triângulo", "lado1": lado1, "lado2": lado2, "lado3": lado3 }
-    adicionar_forma(formas, triangulo)
-
-função adicionar_quadrado(formas, lado):
-    // Criar um objeto de quadrado com lado especificado
-    quadrado = { "tipo": "quadrado", "lado": lado }
-    adicionar_forma(formas, quadrado)
-
-função adicionar_forma(formas, forma):
-    // Adicionar a forma à lista de formas
-    formas.adicionar(forma)
-    exibir("Forma adicionada com sucesso!")
-
-função listar_formas(formas):
-    // Exibir todas as formas registradas
-    se vazio(formas):
-        exibir("Nenhuma forma registrada.")
-    senão:
-        para cada forma em formas:
-            exibir(forma)
-    
-função sair():
-    // Encerrar o programa
-    exibir("Obrigado por usar o programa. Adeus!")
-    parar()
-
-// Iniciar o programa chamando a função principal
-principal()
