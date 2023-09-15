@@ -1,0 +1,40 @@
+classe ponto
+   variáveis privadas x, y
+   função pública  __init__ (x, y):
+     Atribui x à variável self.x
+     Atribui y à variável self.y
+
+classe linha (ponto)
+    variáveis privadas pnt1, pnt2
+    função pública  __init__(pnt1, pnt2):
+       Atribui pnt1 à variável self.pnt1
+       Atribui pnt2 à variável self.pnt2
+    função pública   comprimento():
+       Calcula o comprimento da linha utilizando as coordenadas de pnt1 e pnt2.
+       Retorna o valor do comprimento.
+
+classe poligono 
+    variável privada pontos
+    função pública  __init__(pontos):
+       Atribui a lista de pontos à variável self.pontos
+    função pública  perímetro():
+       Calcula o perímetro do polígono somando os comprimentos das linhas formadas pelos pontos consecutivos na lista de pontos.
+       Retorna o valor do perímetro.
+
+classe quadrado ( poligono):
+variável privada lado
+   função pública __init__(lado):
+         Inicializa um novo quadrado com o lado especificado
+   função pública areaQuadrado():
+        Calcula a área do quadrado
+   função pública perimetroQuadrado():
+        Calcula o perímetro do quadrado 
+
+classe circulo (ponto):
+   variável privada raio
+   Função pública __init__(raio):
+       Inicializa um novo círculo com o raio especificado
+ Função pública areaCirculo():
+       Calcula a área do círculo 
+   Função pública perimetroCirculo():
+       Calcula o perímetro do círculo
