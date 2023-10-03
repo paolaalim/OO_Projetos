@@ -1,29 +1,23 @@
 Geometria Python
 
-Este é um projeto Python que implementa classes para representar pontos, linhas, polígonos, quadrados e círculos, juntamente com métodos para calcular seus perímetros e áreas. Este código foi desenvolvido como parte de um projeto para a faculdade e pode ser usado como base para cálculos geométricos simples.
+Este é um projeto Python que implementa classes para representar pontos, linhas, polígonos, quadrados e círculos, juntamente com métodos para calcular seus perímetros e áreas. 
+Este código pode ser usado como base para cálculos geométricos simples.
 
-Instruções de Uso
 
-Ponto: A classe Ponto representa um ponto no plano cartesiano. Você pode criar um ponto usando Ponto(x, y), onde x e y são as coordenadas do ponto.
+Classes
 
-Linha: A classe Linha representa uma linha entre dois pontos. Você pode criar uma linha usando Linha(ponto1, ponto2), onde ponto1 e ponto2 são instâncias da classe Ponto.
+Ponto: A classe Ponto representa um ponto no plano cartesiano. Crie pontos com Ponto(x, y), onde x e y são as coordenadas do ponto.
+Linha: A classe Linha representa uma linha entre dois pontos. Pode-se criar uma linha usando Linha(ponto1, ponto2), onde ponto1 e ponto2 são instâncias da classe Ponto.
+Poligono: A classe Poligono representa um polígono formado por uma lista de pontos. Para criar um polígono, a classe Poligono pode ser utilizada. Cada polígono é formado 
+por uma lista de pontos, onde cada ponto é representado como uma instância da classe Ponto.
+Quadrado e Circulo: São subclasses de Poligono e representam um quadrado e um círculo, respectivamente. Pra fazer um quadrado a subclasse Quadrado(lado) deve ser utilizada, 
+o lado é o comprimento do lado do quadrado. E para fazer um círculo a do Circulo(raio), raio do círculo, deve ser usado.
 
-Polígono: A classe Poligono representa um polígono formado por uma lista de pontos. Você pode criar um polígono usando Poligono([ponto1, ponto2, ponto3, ...]), onde cada ponto é uma instância da classe Ponto.
 
-Quadrado: A classe Quadrado é uma subclasse de Poligono e representa um quadrado. Você pode criar um quadrado usando Quadrado(lado), onde lado é o comprimento de um lado do quadrado.
-
-Círculo: A classe Círculo é uma subclasse de Ponto e representa um círculo. Você pode criar um círculo usando Círculo(raio), onde raio é o raio do círculo.
-
-Métodos Disponíveis
-
-Para Linhas e Polígonos:
+Métodos 
 
 comprimento(): Calcula o comprimento da linha ou o perímetro do polígono.
-Para Quadrados:
-
 areaQuadrado(): Calcula a área do quadrado.
 perimetroQuadrado(): Calcula o perímetro do quadrado.
-Para Círculos:
-
 areaCirculo(): Calcula a área do círculo.
 perimetroCirculo(): Calcula o perímetro do círculo.
