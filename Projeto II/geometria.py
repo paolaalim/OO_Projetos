@@ -18,7 +18,7 @@ class Poligono:
     def __init__(self, pontos):
         self.__pontos = pontos
     
-    def perímetro(self):
+    def perimetro(self):
         total = 0
         num_pontos = len(self.__pontos)
         for i in range(num_pontos):
@@ -41,7 +41,7 @@ class Quadrado(Poligono):
     def perimetroQuadrado(self):
         return self.perímetro()
 
-class Círculo(Ponto):
+class Circulo(Ponto):
     def __init__(self, raio):
         super().__init__(0, 0)
         self.__raio = raio
