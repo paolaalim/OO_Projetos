@@ -1,4 +1,9 @@
-from your_module_name import Material, Crianca, CartaCrianca, Responsavel, Padrinho, Usuario
+from classes.Material import Material
+from classes.Crianca import Crianca
+from classes.CartaCrianca import CartaCrianca
+from classes.Responsavel import Responsavel
+from classes.Padrinho import Padrinho
+from classes.Usuario import Usuario
 
 def main():
     usuario = Usuario()
