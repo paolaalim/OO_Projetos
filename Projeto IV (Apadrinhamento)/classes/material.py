@@ -1,5 +1,5 @@
 class Material:
-    def __init__(self):
+    def __init__(self, descricao):
         self.descricao = ""
 
     def get_descricao(self):
