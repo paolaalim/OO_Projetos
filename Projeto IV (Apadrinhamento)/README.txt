@@ -6,7 +6,7 @@ classes `Usuario`, `Padrinho`, `Responsavel`, `Crianca` e `Material`.
 Classes:
 
 1. Usuario:
-    - `cadastrar_como_responsavel()`: Cadastra o usuário como responsável e envia uma carta à criança.
+    - `cadastrar_como_responsavel()`: Cadastra o usuário como responsável e envia a carta da criança.
     - `cadastrar_como_padrinho()`: Cadastra o usuário como padrinho, doa dinheiro, gera código PIX, doa materiais e busca uma criança para apadrinhar.
 
 2. Padrinho:
