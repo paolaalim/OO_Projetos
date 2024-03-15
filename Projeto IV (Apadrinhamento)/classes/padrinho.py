@@ -1,9 +1,8 @@
 from classes.usuario import Usuario
 
 class Padrinho (Usuario):
-    def __init__(self, cartas_disponiveis):
-        super()._init_ (nome, idade)        
-        
+    def __init__(self, nome, email, senha, telefone, endereco, materiais, codigo_pix, cartas_disponiveis):
+        super()._init_ (nome, email, senha, telefone, endereco)        
         self.materiais = []
         self.codigo_pix = "1234567890"
         self.cartas_disponiveis = cartas_disponiveis
