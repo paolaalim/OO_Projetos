@@ -1,15 +1,9 @@
-import random
+from classes.usuario import Usuario
 
-class Material:
-    def __init__(self):
-        self.descricao = ""
-
-class CartaCrianca:
-    def __init__(self):
-        self.nome = ""
-
-class Padrinho:
+class Padrinho (Usuario):
     def __init__(self, cartas_disponiveis):
+        super()._init_ (nome, idade)        
+        
         self.materiais = []
         self.codigo_pix = "1234567890"
         self.cartas_disponiveis = cartas_disponiveis
